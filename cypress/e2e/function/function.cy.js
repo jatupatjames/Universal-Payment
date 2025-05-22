@@ -88,14 +88,14 @@ export function couponPeriod() {
 
 export function selectCouponType() {
   cy.origin(data.origin, {args: {type :coupon.type} } ,({type}) => {
-    cy.get('app-select[phd="Select Coupon Type"] input').click()
+    cy.contains('Select Coupon Type').parent().find('input').click()
     cy.contains(type,{ timeout: 10000 }).click()
   })
 }
 
 export function selectCouponTypeValue() {
   cy.origin(data.origin, {args: {typeValue : coupon.typeValue} } ,({typeValue}) => {
-    cy.get('app-select[phd="Select Coupon Type Value"] input').click()
+    cy.contains('Select Coupon Type Value').parent().find('input').click()
     cy.contains(typeValue,{ timeout: 10000 }).click()
   })
 }
@@ -123,7 +123,7 @@ export function selectLimitNumberOfCoupon() {
 
 export function selectCondition() {
   cy.origin(data.origin, {args: {condition: coupon.condition} } ,({condition}) => {
-    cy.get('app-select[phd="Select Condition"] input').click()
+    cy.contains('Select Condition').parent().find('input').click()
     cy.contains(condition,{ timeout: 10000 }).click()
   })
 }
