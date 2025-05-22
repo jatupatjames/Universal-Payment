@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <!-- VIEWER Users -->
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005396&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">VIEWER: FAST02</button>
+        </form>
+
+        <!-- CHECKER Users -->
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005393&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">CHECKER: MAKER01</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005398&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">CHECKER: MAYUREE</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005401&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">CHECKER: VASINEE</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005403&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">CHECKER: SYSADMIN</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005404&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">CHECKER: SYSOPTR</button>
+        </form>
+
+        <!-- MAKER Users -->
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005397&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">MAKER: SIRIPHAK</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005399&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">MAKER: SOMMART</button>
+        </form>
+        <form method="post" action="https://api.tbs.prior-dev.app/upayment-api/up-authentication-api/initcashlink?USER_CODE=000005400&ACTIVITY_ID=xx&CLIENT=CENTRAL">
+          <button type="submit">MAKER: FAST_CR</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
